@@ -11,7 +11,7 @@ class TestLogin(BaseLoginTest):
         self.loginPage = LoginPage(self.driver)
         self.loginPage.do_login(TestData.STANDARD_USER_NAME, TestData.PASSWORD)
         self.homePage = HomePage(self.driver)
-        assert self.homePage.get_products_title() == "Products"
+        assert self.homePage.get_products_title() == "PRODUCTS"
         self.sidebar = SideBarPage(self.driver)
         self.sidebar.do_logout()
 

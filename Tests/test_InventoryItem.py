@@ -13,4 +13,4 @@ class TestHomePage(BaseTest):
         assert self.header.get_cart_items() == "1"
         self.inventoryitemPage.remove_from_cart()
         self.inventoryitemPage.press_back()
-        assert self.homePage.get_products_title() == "Products"
+        assert self.homePage.get_products_title() == "PRODUCTS"
